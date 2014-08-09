@@ -1,5 +1,5 @@
 # replace cloudbotmail with the name of your app
-application: bwtennis89-mailtest
+application: bwtennis89-mail
 version: 1
 runtime: python27
 api_version: 1
