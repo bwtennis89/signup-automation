@@ -203,6 +203,6 @@ class Mandrill(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
                                 (LogSenderHandler.mapping()),
-                                ('/mandrill/?', Mandrill),
+                                ('/Mandrill/?', Mandrill),
                                 ('/.*', MainHandler)
                               ], debug=True)
