@@ -29,6 +29,7 @@ from google.appengine.api import urlfetch
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        self.response.set_status(200)
         self.response.write('Hello world!')
 
 
@@ -129,6 +130,7 @@ class LogSenderHandler(InboundMailHandler):
 class Mandrill(webapp2.RequestHandler):
     #Mandrill makes a head request to make sure this path exists
     def head(self):
+        self.response.set_status(200)
         return
 
     def post(self):
